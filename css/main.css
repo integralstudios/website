@@ -207,6 +207,19 @@ figure {
 
 figcaption {
     margin-top: 10px;
+}
+
+figcaption a {
+    color: #a1a1a0;
+    text-decoration: none;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -ms-transition: all 1s;
+    transition: all 1s;
+}
+
+figcaption a:hover {
     color: #2e2d2c;
 }
 
@@ -215,7 +228,7 @@ footer {
     margin-top: 60px;
 }
 
-.btn {
+#btn {
     background-color: rgb(151,188,88);
     color: white;
     padding: 15px 20px;
@@ -224,7 +237,7 @@ footer {
     text-decoration: none;
 }
 
-.btn img {
+#btn img {
     margin-left: 15px;
 }
 
