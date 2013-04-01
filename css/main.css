@@ -111,7 +111,7 @@ header img {
 
 h1 {
     text-transform: uppercase;
-    color: grey;
+    color: #a1a1a0;
     font-size: 1.1em;
     word-spacing: 40px;
     font-weight: 400;
@@ -131,7 +131,7 @@ h1 {
 
 .expertise p {
     font-size: .9em;
-    color: grey;
+    color: #2e2d2c;
 }
 
 .graphic, .web {
@@ -155,15 +155,15 @@ h2 {
 }
 
 .graphic h2 {
-    color: rgb(188,81,67);
+    color: rgb(94,40,33);
 }
 
 .web h2 {
-    color: rgb(156,188,67);
+    color: rgb(78,94,33);
 }
 
 .motion h2 {
-    color: rgb(67,129,188);
+    color: rgb(33,64,94);
 }
 
 h3 {
@@ -207,7 +207,7 @@ figure {
 
 figcaption {
     margin-top: 10px;
-    color: grey;
+    color: #2e2d2c;
 }
 
 footer {
