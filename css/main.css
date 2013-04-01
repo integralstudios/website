@@ -99,7 +99,145 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+header {
+    text-align: center;
+    height: 40px;
+}
 
+header img {
+    margin-top: -80px;
+    margin-left: 11px;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: grey;
+    font-size: 1.1em;
+    word-spacing: 40px;
+    font-weight: 400;
+}
+
+.feature {
+    width: 100%;
+    background: rgb(235,234,234);
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+.content {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.expertise p {
+    font-size: .9em;
+    color: grey;
+}
+
+.graphic, .web {
+    margin-right: 23px;
+}
+
+.graphic, .web, .motion {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+.graphic img, .web img, .motion img {
+    margin: 0 auto;
+    display: block;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.graphic h2 {
+    color: rgb(188,81,67);
+}
+
+.web h2 {
+    color: rgb(156,188,67);
+}
+
+.motion h2 {
+    color: rgb(67,129,188);
+}
+
+h3 {
+    display: table;
+    margin: 0 auto 20px auto;
+    background-color: white;
+    padding: 0 20px;
+}
+
+hr {
+    margin-bottom: -15px;
+}
+
+.work {
+    text-align: center;
+}
+
+.work div {
+    display: inline-block;
+    width: 30%;
+    height: 120px;
+    background: rgb(235,234,234);
+    margin-bottom: 20px;
+    margin-right: 24px;
+}
+
+.work div:last-child{
+    margin-right: 0;
+}
+
+.team {
+    text-align: center;
+}
+
+figure {
+    display: inline-block;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+figcaption {
+    margin-top: 10px;
+    color: grey;
+}
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.btn {
+    background-color: rgb(151,188,88);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 3px;
+    box-shadow: 1px 3px rgb(68,86,39);
+    text-decoration: none;
+}
+
+.btn img {
+    margin-left: 15px;
+}
+
+.social {
+    margin: 40px 0 20px 0;
+}
+
+.social a {
+    margin-right: 25px;
+}
+
+.social a:last-child {
+    margin-right: 0;
+}
 
 /* ==========================================================================
    Helper classes
