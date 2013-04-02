@@ -76,6 +76,10 @@ $.browserLanguage(function(language, acceptHeader) {
 		var a = document.getElementById('btn');
 		a.href = 'mailto:' + e;
 		a.innerHTML = e + '<img src="img/icn_mail.png">';
-	} else if (language == 'Polish') {
+	} else {
+		var e = 'hello@integralstudios.be';
+		var a = document.getElementById('btn');
+		a.href = 'mailto:' + e;
+		a.innerHTML = e + '<img src="img/icn_mail.png">';
 	}
 });

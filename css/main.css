@@ -235,6 +235,7 @@ footer {
     border-radius: 3px;
     box-shadow: 1px 3px rgb(68,86,39);
     text-decoration: none;
+    font-size: .9em;
 }
 
 #btn img {
