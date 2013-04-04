@@ -1,3 +1,7 @@
+$("body a[href^='http://']").attr("target","_blank");
+
+
+
 $.browserLanguage(function(language, acceptHeader) {
 	console.log(language);
 

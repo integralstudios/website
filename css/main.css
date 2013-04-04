@@ -233,9 +233,37 @@ footer {
     color: white;
     padding: 15px 20px;
     border-radius: 3px;
-    box-shadow: 1px 3px rgb(68,86,39);
+
+    -webkit-box-shadow: 0px 3px rgb(68,86,39);
+    box-shadow: 0px 3px rgb(68,86,39);
     text-decoration: none;
     font-size: .9em;
+
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -ms-transition: all 1s;
+    transition: all 1s;transition: all 1s;
+}
+
+#btn:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -ms-transition: all 1s;
+    transition: all 1s;
+}
+
+#btn:active {
+    background-color: rgb(68,86,39);
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    -ms-transition: none;
+    transition: none;
 }
 
 #btn img {
@@ -244,6 +272,24 @@ footer {
 
 .social {
     margin: 40px 0 20px 0;
+}
+
+.social img {
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+    opacity: .2;
+
+    -webkit-transition: all .7s;
+    -moz-transition: all .7s;
+    -o-transition: all .7s;
+    -ms-transition: all .7s;
+    transition: all .7s;
+}
+
+.social img:hover {
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
 }
 
 .social a {
