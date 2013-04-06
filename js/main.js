@@ -3,7 +3,7 @@ $("body a[href^='http://']").attr("target","_blank");
 
 
 $.browserLanguage(function(language, acceptHeader) {
-	console.log(language);
+	//console.log(language);
 
 	if (language == 'English') {
 		var e = 'hello@integralstudios.be';

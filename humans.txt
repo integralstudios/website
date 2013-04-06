@@ -3,7 +3,9 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Louis Van de Calseyde -- developer -- @vdclouis
+    Arthur Lambillotte -- designer -- @artlambi
+    Pierre Van der Eecken -- developer -- @peecken
 
 # THANKS
 
@@ -11,5 +13,8 @@
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3
+    HTML5, CSS3, Compass, SASS
     Normalize.css, jQuery, Modernizr
+    Retina.js
+    jQuery-Browser-Language jQuery plugin
+
