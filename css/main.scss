@@ -175,6 +175,7 @@ h1 {
 h2 {
     text-align: center;
     font-size: 1.1em;
+    font-weight: 600;
 }
 
 .graphic h2 {
@@ -192,12 +193,14 @@ h2 {
 h3 {
     display: table;
     margin: 0 auto 20px auto;
-    background-color: white;
+    background-color: #fcfcfc;
     padding: 0 20px;
+    font-weight: 600;
 }
 
 hr {
     margin-bottom: -15px;
+    border-color: #ebebeb;
 }
 
 .work {
@@ -222,8 +225,12 @@ hr {
 figure {
     display: inline-block;
     vertical-align: top;
-    width: 30%;
+    width: 32%;
     margin-bottom: 20px;
+
+    img {
+        width: 150px;
+    }
 }
 
 figcaption {
