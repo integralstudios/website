@@ -97,6 +97,7 @@ textarea {
 
 /* colors */
 $dark-red:      rgb(94,40,33);
+$red:           #BC5143;
 $dark-green:    rgb(78,94,33);
 $light-green:   rgb(156,188,67);
 $dark-blue:     rgb(33,64,94);
@@ -126,9 +127,17 @@ h1 {
     font-weight: 400;
 }
 
-.feature img {
+.feature {
     width: 100%;
+    background: $red;
     margin-bottom: 20px;
+
+    img {
+        max-height: 460px;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    }
 }
 
 .content {
@@ -244,22 +253,13 @@ footer {
     background-color: $light-green;
     border-radius: 3px;
 
-    box-shadow:
-      /*-1px 0px 1px $dark-green, 0px 1px 1px $dark-green,
-      -2px 1px 1px $dark-green, -1px 2px 1px $dark-green,
-      -3px 2px 1px $dark-green, -2px 3px 1px $dark-green,
-      -4px 3px 1px $dark-green, -3px 4px 1px $dark-green,
-      -5px 4px 1px $dark-green, -4px 5px 1px $dark-green,
-      -6px 5px 1px $dark-green;*/
-      0px 3px 0 $dark-green;
-  
+    box-shadow: 0px 3px 0 $dark-green;
 
     @include transition(all 0.1s linear);
     @include transform(translateZ(0));
 
     &:active {
         box-shadow: none;
-        /*@include transform(translate3d(-6px, 6px, 0));*/
         @include transform(translate3d(0px, 3px, 0))
     }
 
