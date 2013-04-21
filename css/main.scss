@@ -32,12 +32,12 @@ body {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: #e3e3e3;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: #e3e3e3;
     text-shadow: none;
 }
 
@@ -156,6 +156,7 @@ h1 {
 
 .expertise {
     margin: 0 auto;
+    margin-bottom: 30px;
     text-align: center;
 }
 
