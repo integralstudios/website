@@ -98,6 +98,8 @@ textarea {
 /* colors */
 $dark-red:      rgb(94,40,33);
 $red:           #BC5143;
+$green:         #9CBC43;
+$blue:          #4381BC;
 $dark-green:    rgb(78,94,33);
 $light-green:   rgb(156,188,67);
 $dark-blue:     rgb(33,64,94);
@@ -140,11 +142,15 @@ h1 {
     background: $red;
     margin-bottom: 20px;
 
-    img {
+    img#imac {
         max-height: 460px;
         display: block;
         margin: 0 auto;
         max-width: 100%;
+    }
+
+    img#ipad, img#ipho {
+        display: none;
     }
 }
 
@@ -327,6 +333,23 @@ footer {
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .feature {
+        background: $green;
+
+        img#ipad {
+            max-height: 460px;
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+
+        img#imac, img#ipho {
+            display: none;
+        }
+    }
+}
+
 @media only screen and (max-width: 700px) {
     .content {
         width: 90%;
@@ -340,6 +363,9 @@ footer {
 }
 
 @media only screen and (max-width: 589px) {
+    
+    
+
     .content{
         width: 80%;   
     }
