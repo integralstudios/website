@@ -16,23 +16,11 @@
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <header>
-      <h1>integral</h1>
-      <img src="img/logo.png" alt="integral studios logo">
-      <h1>studios</h1>
-    </header>
+    {% include header.html %}
 
     {{ content }}
 
-    <footer>
-      <a id="btn" class="button yellow" href=""></a>
-      <div class="social">
-        <a href="http://facebook.com/integralstudios"><img src="img/s_facebook.png" alt="facebook logo"></a>
-        <a href="http://linkedin.com/company/integral-studios"><img src="img/s_linkedin.png" alt="linkedin logo"></a>
-        <a href="http://twitter.com/IntegralStudios"><img src="img/s_twitter.png" alt="twitter logo"></a>
-        <a href="http://vimeo.com/integralstudios"><img src="img/s_vimeo.png" alt="vimeo logo"></a>
-      </div>
-    </footer>
+    {% include footer.html %}
 
     <script src="bower_components/jquery/jquery.min.js"></script>
     <script src="bower_components/retina.js/src/retina.js"></script>
