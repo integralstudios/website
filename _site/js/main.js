@@ -68,11 +68,6 @@ $.browserLanguage(function(language, acceptHeader) {
 		var a = document.getElementById('btn');
 		a.href = 'mailto:' + e;
 		a.innerHTML = e + '<img src="img/icn_mail.png">';
-	} else if (language == 'Polish') {
-		var e = 'ciao@integralstudios.be';
-		var a = document.getElementById('btn');
-		a.href = 'mailto:' + e;
-		a.innerHTML = e + '<img src="img/icn_mail.png">';
 	} else if (language == 'Czech') {
 		var e = 'ahoj@integralstudios.be';
 		var a = document.getElementById('btn');
