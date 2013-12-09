@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Integral Studios</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 8]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    {% include header.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+    <script src="bower_components/jquery/jquery.min.js"></script>
+    <script src="bower_components/retina.js/src/retina.js"></script>
+    <script src="js/lang.js"></script>
+    <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-20134293-2']);
+      _gaq.push(['_setDomainName', 'integralstudios.be']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  </body>
+</html>
