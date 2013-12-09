@@ -127,6 +127,7 @@ header {
 
     img {
         display: inline-block;
+        width: 26px;
         margin: -5px 5px 0 5px;
     }
 }
@@ -158,6 +159,10 @@ header {
     margin: 0 auto;
     margin-bottom: 30px;
     text-align: center;
+}
+
+.expertise img {
+    width: 44px;
 }
 
 .expertise p {
@@ -289,6 +294,7 @@ footer {
 
     img {
         margin-left: 14px;
+        width: 12px;
     }
 }
 
