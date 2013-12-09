@@ -47,11 +47,11 @@ body {
 
 hr {
     display: block;
+    margin: 1em 0;
+    padding: 0;
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
 }
 
 /*
@@ -67,9 +67,9 @@ img {
  */
 
 fieldset {
-    border: 0;
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
 /*
@@ -86,9 +86,9 @@ textarea {
 
 .chromeframe {
     margin: 0.2em 0;
+    padding: 0.2em 0;
     background: #ccc;
     color: #000;
-    padding: 0.2em 0;
 }
 
 /* ==========================================================================
@@ -107,23 +107,22 @@ $font:          #2e2d2c;
 $lg:            #a1a1a0;
 
 body {
-    font-family: 'Open Sans', sans-serif;
     background: #fcfcfc;
+    font-family: 'Open Sans', sans-serif;
 }
 
 header {
-    height: 40px;
     margin: 0 auto;
     width: 204px;
+    height: 40px;
 
     h1 {
-        //margin: 0;
-        text-transform: uppercase;
-        color: $lg;
-        font-size: 1.1em;
-        font-weight: 400;
         display: inline-block;
+        color: $lg;
         vertical-align: middle;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 1.1em;
     }
 
     img {
@@ -133,15 +132,15 @@ header {
 }
 
 .feature {
+    margin-bottom: 20px;
     width: 100%;
     background: $red;
-    margin-bottom: 20px;
 
     img#imac {
-        max-height: 460px;
         display: block;
         margin: 0 auto;
         max-width: 100%;
+        max-height: 460px;
     }
 
     img#ipad, img#ipho {
@@ -151,8 +150,8 @@ header {
 
 .content {
     margin: 0 auto;
-    width: 70%;
     max-width: 960px;
+    width: 70%;
 }
 
 .expertise {
@@ -162,9 +161,9 @@ header {
 }
 
 .expertise p {
-    font-size: .9em;
     color: $font;
     text-align: left;
+    font-size: .9em;
 }
 
 .graphic, .web {
@@ -177,15 +176,15 @@ header {
     vertical-align: top;
 
     img {
-        margin: 0 auto;
         display: block;
+        margin: 0 auto;
     }
 }
 
 h2 {
     text-align: center;
-    font-size: 1.1em;
     font-weight: 600;
+    font-size: 1.1em;
 }
 
 .graphic h2 {
@@ -203,8 +202,8 @@ h2 {
 h3 {
     display: table;
     margin: 0 auto 20px auto;
-    background-color: #fcfcfc;
     padding: 0 20px;
+    background-color: #fcfcfc;
     font-weight: 600;
 }
 
@@ -214,21 +213,25 @@ hr {
 }
 
 .work {
-    text-align: center;
     width: 100%;
+    text-align: center;
 
-    img {
-        display: inline-block;
-        max-width: 193px;
-        max-height: 149px;
-        height: 30%;
-        width: 30%;
-        margin-bottom: 20px;
-        margin-right: 24px;
+    a {
+        margin-right: 20px;
+        text-decoration: none;
 
         &:last-child {
             margin-right: 0;
         }
+    }
+
+    img {
+        display: inline-block;
+        margin-bottom: 20px;
+        max-width: 193px;
+        max-height: 149px;
+        width: 30%;
+        height: 30%;
     }
 }
 
@@ -238,9 +241,9 @@ hr {
 
 figure {
     display: inline-block;
-    vertical-align: top;
-    width: 30%;
     margin-bottom: 20px;
+    width: 30%;
+    vertical-align: top;
 
     img {
         width: 150px;
@@ -252,9 +255,9 @@ figcaption {
     margin-top: 10px;
 
     a {
+        @include transition(all 1s);
         color: $lg;
         text-decoration: none;
-        @include transition(all 1s);
 
         &:hover {
             color: $font;
@@ -263,27 +266,25 @@ figcaption {
 }
 
 footer {
-    text-align: center;
     margin-top: 60px;
+    text-align: center;
 }
 
 .button {
-    text-decoration: none;
-    color: white;
-    padding: 15px 20px;
-    display: inline-block;
-    font-size: .9em;
-    background-color: $light-green;
-    border-radius: 3px;
-
-    box-shadow: 0px 3px 0 $dark-green;
-
     @include transition(all 0.1s linear);
     @include transform(translateZ(0));
+    display: inline-block;
+    padding: 15px 20px;
+    border-radius: 3px;
+    background-color: $light-green;
+    box-shadow: 0px 3px 0 $dark-green;
+    color: white;
+    text-decoration: none;
+    font-size: .9em;
 
     &:active {
+        @include transform(translate3d(0px, 3px, 0));
         box-shadow: none;
-        @include transform(translate3d(0px, 3px, 0))
     }
 
     img {
@@ -295,17 +296,17 @@ footer {
     margin: 40px 0 20px 0;
 
     img {
-        -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
-        filter: alpha(opacity=20);
-        opacity: .2;
-        height: 24px;
 
         @include transition(all .7s);
+        height: 24px;
+        opacity: .2;
+        -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+        filter: alpha(opacity=20);
 
         &:hover {
+            opacity: 1;
             -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
             filter: alpha(opacity=100);
-            opacity: 1;
         }
     }
 
@@ -336,10 +337,10 @@ footer {
         background: $green;
 
         img#ipad {
-            max-height: 460px;
             display: block;
             margin: 0 auto;
             max-width: 100%;
+            max-height: 460px;
         }
 
         img#imac, img#ipho {
@@ -361,31 +362,50 @@ footer {
 }
 
 @media only screen and (max-width: 589px) {
-    
-    
+    // UNLOCK WHEN ART IS READY   
+    // .feature {
+    //     background: $blue;
+
+    //     img#ipho {
+    //         display: block;
+    //         margin: 0 auto;
+    //         max-width: 100%;
+    //         max-height: 460px;
+    //     }
+
+    //     img#imac, img#ipad {
+    //         display: none;
+    //     }
+    // }
 
     .content{
         width: 80%;   
     }
     .expertise p {
         font-size: 1em;
+        text-align: center;
     }
     .graphic, .web, .motion {
         display: block;
         width: 100%;
         vertical-align: top;
     }
-    .work img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        margin: 0 auto;
-        margin-bottom: 10px;
-        
-        &:last-child{
+    .work{
+        img {
+            display: block;
+            margin: 0;
             margin: 0 auto;
-            margin-bottom: 50px;
+            margin-bottom: 10px;
+            width: 100%;
+            height: 100%;
+        }
+
+        a {
+            &:last-child {
+                img {
+                    margin-bottom: 30px;
+                }
+            }
         }
     }
     
@@ -394,18 +414,23 @@ footer {
         margin: 0 auto;
         width: 100%;
         img {
-            width: 150px;
-            //display: block;
-            height: 150px;
             margin: 0;
             padding: 0;
+            width: 150px;
+            height: 150px;
         }
 
         figcaption {
-            margin-bottom: 15px;
             margin-top: 0;
+            margin-bottom: 15px;
         }
     }   
+
+    .team {
+        hr {
+            margin-top: 20px; 
+        }
+    }
 }
 
 @media print,
@@ -423,8 +448,8 @@ footer {
 @media print {
     * {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
         box-shadow: none !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
         text-shadow: none !important;
     }
 
